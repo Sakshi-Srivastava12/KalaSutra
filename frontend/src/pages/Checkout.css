@@ -1,0 +1,214 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.checkout-page {
+  padding: 40px;
+  min-height: 100vh;
+
+  /* PREMIUM BACKGROUND */
+  background: linear-gradient(135deg, #ffd6e0, #ffc1cc, #ffe4ec);
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BRAND */
+.brand {
+  text-align: center;
+  font-size: 280px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ff4d6d;
+  letter-spacing: 2px;
+  font-family: Cambria;
+}
+
+/* STEPS */
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+  font-size: 118px;
+  font-family: Cambria;
+}
+
+.steps span {
+  color: #999;
+  position: relative;
+}
+
+.steps .active {
+  color: #ff4d6d;
+  font-weight: 600;
+}
+
+/* LAYOUT */
+.checkout-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* LEFT FORM */
+.left {
+  padding: 140px;
+
+  /* GLASS EFFECT */
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* HEADINGS */
+.left h2 {
+  font-size: 96px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family:  Garamond;
+}
+
+/* INPUTS */
+.left input {
+  width: 100%;
+  padding: 56px;
+  margin-bottom: 15px;
+
+  border-radius: 12px;
+  border: 1px solid #ddd;
+ font-family:  Garamond;
+  font-size:87px;
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.left input:focus {
+  border-color: #ff4d6d;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255,77,109,0.3);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 115px;
+}
+
+/* BUTTON */
+.left button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 78px;
+
+  background: linear-gradient(135deg, #ff4d6d, #ff758c);
+  color: white;
+
+  font-size: 80px;
+  font-weight: 600;
+ font-family:  Garamond;
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.left button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255,77,109,0.3);
+}
+
+/* RIGHT SIDE */
+.right {
+  padding: 130px;
+
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+button {
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+}
+/* SUMMARY */
+.summary-box h3 {
+  font-size: 124px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 900;
+   font-family:  Garamond;
+}
+
+/* ITEM */
+.item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 115px;
+}
+
+.item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+}
+
+/* LINE */
+.line {
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+/* PRICE */
+.summary-box p {
+  font-size: 78px;
+  margin: 10px 0;
+   font-family:  Garamond;
+    font-weight: 900;
+}
+
+.summary-box h2 {
+  font-size: 92px;
+   font-family:  Garamond;
+  color: #2e7d32;
+  text-align: center;
+  font-weight: 900;
+}
+
+/* SUCCESS */
+.success {
+  font-size: 98px;
+  text-align: center;
+  color: green;
+  font-weight: 900;
+   font-family:  Garamond;
+}
+.kala {
+  color: #8B4513; /* dark brown */
+}
+
+.sutra {
+  font-family: 'Anek Devanagari', sans-serif;
+  font-size: 288px;
+  position: relative;
+  color: #ff3d57;
+  letter-spacing: 2px;
+}
+
+/* ✨ line extending from sutra */
+.sutra::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 120px;   /* line length */
+  background: #ff3d57;
+  top: 70%;
+  left: 100%;
+  margin-left: 10px;
+}

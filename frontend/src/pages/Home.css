@@ -1,0 +1,622 @@
+/*.home-container{
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:'Poppins', sans-serif;
+
+    background: linear-gradient(135deg,#667eea,#764ba2,#ff7eb3);
+    background-size:400% 400%;
+
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.hero-section{
+    text-align:center;
+    color:white;
+}
+
+.hero-section h1{
+    font-size:100px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero-section p{
+    font-size:72px;
+    margin-bottom:30px;
+}
+
+.hero-section button{
+    padding:34px 50px;
+    font-size:28px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#764ba2;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero-section button:hover{
+    transform:scale(1.05);
+    background:#f0f0f0;
+}
+.gallery-section{
+    padding:60px;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.featured-section{
+    padding:60px;
+    text-align:center;
+}
+
+.featured-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.art-card{
+    width:250px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.art-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.products-section{
+    padding:60px;
+    text-align:center;
+}
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.product-card{
+    background:white;
+    border-radius:10px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.product-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}*/
+/* GENERAL PAGE */
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f6f6f6;
+}
+
+/* SECTION TITLE */
+
+section h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    color:#333;
+}
+
+/* HERO SECTION */
+
+.home-container{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:linear-gradient(135deg,#667eea,#764ba2,#ff7eb3);
+    color:white;
+}
+
+.hero-section h1{
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 100px;
+
+    letter-spacing: 3px;
+
+    color: white;
+
+    text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    margin-bottom: 20px;
+
+}
+
+.hero-section p{
+    font-size:54px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.hero-buttons button{
+    padding:55px 75px;
+    font-size:48px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#764ba2;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero-buttons button:hover{
+    transform:scale(1.05);
+}
+
+/* ART GALLERY */
+
+.gallery-section{
+    padding:80px 10%;
+
+    text-align:center;
+    background: linear-gradient(
+            135deg,
+            #fff0f5,
+            #ffe4ec,
+            #f8e7ff
+    );
+}
+.gallery-section h2{
+    font-family: 'Playfair Display', serif;
+    font-size:98px;        /* bigger text */
+    font-weight:700;
+    color:#333;
+    letter-spacing:1px;
+    margin-bottom:50px;
+    text-transform:uppercase;
+    background: linear-gradient(90deg,#667eea,#764ba2,#ff7eb3);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    /*letter-spacing:2px;*/
+
+    margin-bottom:50px;
+
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    align-items:center;
+}
+
+/* IMAGE CONTAINER */
+
+.gallery-grid img{
+    width:100%;
+    height:960px;       /* same height for all */
+    object-fit:cover;   /* keeps image ratio but fills box */
+    border-radius:12px;
+    transition:0.3s;
+}
+
+/* HOVER EFFECT */
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* FEATURED ART */
+
+/* FEATURED ARTWORKS SECTION */
+
+.featured-section{
+    padding:80px 10%;
+    background: linear-gradient(
+            135deg,
+            #fff0f5,
+            #ffe4ec,
+            #f8e7ff
+    );
+    text-align:center;
+}
+
+.featured-section h2{
+    font-family: 'Playfair Display', serif;
+    font-size:100px;
+    margin-bottom:50px;
+    font-weight:700;
+    background: linear-gradient(90deg,#667eea,#764ba2,#ff7eb3);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* GRID LAYOUT */
+
+.featured-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+    justify-items:center;
+}
+
+/* CARD DESIGN */
+
+.art-card{
+    width:320px;
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    transition:all 0.3s ease;
+}
+
+/* IMAGE */
+
+.art-card img{
+    width:200%;
+    height:320px;
+    object-fit:cover;
+    transition:transform 0.4s ease;
+}
+
+/* TITLE */
+
+.art-card p{
+    padding:35px;
+    font-size:58px;
+    font-weight:600;
+    color:#333;
+}
+
+/* HOVER EFFECT */
+
+.art-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+.art-card:hover img{
+    transform:scale(1.05);
+}
+/* PRODUCTS */
+
+.products-section{
+    padding:80px 10%;
+    background:#fafafa;
+}
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.product-card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+    text-align:center;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.product-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    margin:10px;
+}
+
+.product-card p{
+    margin-bottom:15px;
+    font-weight:bold;
+    color:#764ba2;
+}
+/* TOP ARTISTS SECTION */
+
+.artists-section{
+    padding:80px 10%;
+    background: linear-gradient(
+            135deg,
+            #fff0f5,
+            #ffe4ec,
+            #f8e7ff
+    );
+    text-align:center;
+}
+
+.artists-section h2{
+    font-family: 'Playfair Display', serif;
+    font-size:100px;
+    margin-bottom:50px;
+    font-weight:700;
+    background: linear-gradient(90deg,#667eea,#764ba2,#ff7eb3);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* GRID LAYOUT */
+
+.artists-grid{
+    display:flex;
+    justify-content:center;
+    gap:90px;
+    flex-wrap:wrap;
+}
+
+/* ARTIST CARD */
+
+.artist-card{
+    text-align:center;
+    transition:0.3s;
+}
+
+/* ARTIST IMAGE */
+
+.artist-card img{
+    width:1050px;
+    height:550px;
+    border-radius:50%;
+    object-fit:cover;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+/* ARTIST NAME */
+
+.artist-card p{
+    margin-top:32px;
+    font-size:58px;
+    font-weight:600;
+    color:#333;
+}
+
+/* HOVER EFFECT */
+
+.artist-card:hover img{
+    transform:scale(1.1);
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+/* ART BUBBLES */
+
+.art-bubbles{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:1;
+}
+
+/* BUBBLE STYLE */
+
+.bubble{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    color:white;
+
+    backdrop-filter:blur(6px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
+    animation:floatBubble 14s infinite ease-in-out;
+
+    overflow:hidden;   /* ADD THIS */
+}
+
+/* ICON STYLE */
+
+.bubble i{
+    font-size:28px;
+}
+
+/* SIZES */
+
+.big{
+    width:390px;
+    height:390px;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+}
+
+.medium{
+    width:220px;
+    height:220px;
+    background:linear-gradient(135deg,#a18cd1,#fbc2eb);
+}
+
+.small{
+    width:160px;
+    height:160px;
+    background:linear-gradient(135deg,#84fab0,#8fd3f4);
+}
+
+/* POSITIONS */
+
+.big{
+    top:20%;
+    left:10%;
+}
+
+.medium{
+    top:65%;
+    left:20%;
+}
+
+.small{
+    top:40%;
+    left:80%;
+}
+
+.bubble2{
+    top:75%;
+    left:70%;
+}
+
+.bubble3{
+    top:30%;
+    left:55%;
+}
+.bubble6{
+    top:80%;
+    left:15%;
+}
+
+.bubble7{
+    top:10%;
+    left:45%;
+}
+
+.bubble8{
+    top:55%;
+    left:90%;
+}
+
+.bubble9{
+    top:30%;
+    left:75%;
+}
+
+.bubble10{
+    top:20%;
+    left:20%;
+}
+.bubble10{
+    top:60%;
+    left:40%;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes floatBubble{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-80px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+/* AVAILABLE ARTWORK SECTION */
+
+.products-section{
+
+padding:100px 10%;
+
+background: linear-gradient(
+135deg,
+#fff0f5,
+#f3e8ff,
+#e0f7fa
+);
+
+border-radius:30px;
+
+margin:60px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.1);
+
+text-align:center;
+}
+.products-section h2{
+
+font-family:'Playfair Display', serif;
+
+font-size:150px;
+
+margin-bottom:50px;
+
+background: linear-gradient(90deg,#ff7eb3,#6a5acd);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+letter-spacing:2px;
+}
+.product-card h3{
+font-size:22px;
+margin-top:10px;
+}
+
+.product-card p{
+font-size:18px;
+font-weight:bold;
+color:#6a5acd;
+}
+.product-card{
+
+background:white;
+
+border-radius:20px;
+
+padding:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+
+transition:0.3s;
+}
+
+.product-card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+body {
+  padding-top: 80px;
+}

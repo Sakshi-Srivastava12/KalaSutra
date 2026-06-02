@@ -1,0 +1,100 @@
+/* PAGE */
+.orders-page {
+  padding: 100px 20px 40px;
+  background: linear-gradient(to right, #eef2ff, #fdf2f8);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* TITLE */
+.orders-title {
+  font-size: 102px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1e293b;
+  text-align: center;
+   font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #6366f1, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* EMPTY STATE */
+.orders-empty {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+  color: #64748b;
+  max-width: 600px;
+  margin: auto;
+}
+
+.orders-empty p {
+  margin: 10px 0;
+  font-size: 45px;
+}
+
+/* ORDER CARD */
+.order-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+/* HEADER */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 76px;
+}
+
+/* ITEMS */
+.order-items {
+  font-size: 54px;
+  color: #475569;
+  margin-top: 10px;
+}
+
+/* STATUS */
+.order-status {
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .orders-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .order-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .order-card {
+    padding: 15px;
+  }
+
+  .orders-page {
+    padding: 90px 15px 30px;
+  }
+}

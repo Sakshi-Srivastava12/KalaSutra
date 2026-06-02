@@ -1,0 +1,44 @@
+package com.sakshi.kala.controller;
+
+import com.sakshi.kala.entity.Order;
+import com.sakshi.kala.entity.User;
+import com.sakshi.kala.repository.OrderRepository;
+import com.sakshi.kala.repository.UserRepository;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/user/orders")
+public class OrderController {
+
+    private final UserRepository userRepository;
+    private final OrderRepository orderRepository;
+
+    public OrderController(UserRepository userRepository,
+                           OrderRepository orderRepository) {
+        this.userRepository = userRepository;
+        this.orderRepository = orderRepository;
+    }
+
+    @PostMapping("/create")
+    public ResponseEntity<?> createOrder(Authentication authentication) {
+
+        // STEP 1: Logged-in email
+        String email = authentication.getName();
+
+        // STEP 2: Find user from DB
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        // STEP 3: Create order
+        Order order = new Order();
+        order.setUser(user);
+        order.setStatus("PLACED");
+
+        orderRepository.save(order);
+
+        return ResponseEntity.ok("Order created successfully");
+    }
+}
