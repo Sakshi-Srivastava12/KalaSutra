@@ -1,0 +1,84 @@
+.profile-page {
+  padding: 100px 20px;
+  background: linear-gradient(to right, #eef2ff, #fdf2f8);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile-title {
+  text-align: center;
+  font-size: 102px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, #6366f1, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-card {
+  width: fit-content;   /* 🔥 content ke hisaab se box */
+  min-width: 280px;     /* mobile ke liye safe */
+  max-width: 90%;
+  margin: auto;
+  background: white;
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* AVATAR */
+.profile-avatar {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(to right, #6366f1, #ec4899);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  margin: -50px auto 15px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+.no-data {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 12px;
+  font-size: 46px;          /* 🔥 bada text */
+  font-weight: 500;
+  text-align: center;
+}
+/* ROW */.profile-row {
+           display: flex;
+           flex-direction: column;   /* 🔥 vertical layout */
+           align-items: center;      /* 🔥 center */
+           gap: 5px;
+           margin: 12px 0;
+           font-size: 55px;
+           text-align: center;
+         }
+
+.profile-row span:first-child {
+  font-weight: 600;
+  color: #334155;
+}
+
+.profile-row span:last-child {
+  color: #475569;
+}
+
+/* STATUS BADGE */
+.status-badge {
+  margin-top: 12px;
+  display: inline-block;
+  padding: 6px 14px;
+  background: #dcfce7;
+  color: #16a34a;
+  border-radius: 20px;
+  font-size: 63px;
+  font-weight: 600;
+  text-align: center;
+}
